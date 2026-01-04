@@ -3,7 +3,7 @@
 set -e
 set -o pipefail
 
-cd src/example_spi_lcd
+cd src/example_spi_lcd/hdl
 
 yosys -D LEDS_NR=6 -p "read_verilog top.v; synth_gowin -json spi_lcd_example.json"
 

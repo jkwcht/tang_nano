@@ -258,6 +258,10 @@ always@(posedge clk or negedge resetn) begin
 					end
 				end
 			end
+			
+			default : begin
+				// action for unhandled states
+			end
 
 		endcase
 
